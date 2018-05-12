@@ -22,14 +22,14 @@ class Laptop {
         self.ram = ram
         self.vgi = vgi
         self.frequency = frequency
-        self.cicles = 0
+        self.bataryCycles = 0
         self.isBroken = false
         self.isEnable = false
     }
 
     func turnOn() -> Bool{
         if !isEnable {
-            cicles += 1
+            bataryCycles += 1
 
             if !isBroken {
                 isBroken = tryBroke()
@@ -53,7 +53,7 @@ class Laptop {
     }
 
     private func tryBroke() -> Bool {
-        if cicles > 5 {
+        if bataryCycles > 5 {
             return Int(arc4random_uniform(1000)) % 5 == 0
         }
 

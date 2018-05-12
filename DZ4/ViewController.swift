@@ -12,7 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let laptop = Laptop(name: "Asus", ram: 16, vgi: 8, frequency: 3.2)
+
+        print("Turn Off - \(laptop.turnOff())")
+        print("Turn Off - \(laptop.turnOn())")
+        print("Turn Off - \(laptop.turnOn())")
+        print("Turn Off - \(laptop.turnOff())")
     }
 
     override func didReceiveMemoryWarning() {
