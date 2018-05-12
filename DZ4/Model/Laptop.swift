@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class Laptop {
+        var name: String
+        var ram: Int
+        var vgi: Int
+        var frequency: Double
+        var bataryCycles: Int
+        var isBroken: Bool
+        var isEnable: Bool
+    
+}
