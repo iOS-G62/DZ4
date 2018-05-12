@@ -16,5 +16,14 @@ class Laptop {
         var bataryCycles: Int
         var isBroken: Bool
         var isEnable: Bool
-    
+
+    init(name: String, ram: Int, vgi: Int, frequency: Double) {
+        self.name = name
+        self.ram = ram
+        self.vgi = vgi
+        self.frequency = frequency
+        self.cicles = 0
+        self.isBroken = false
+        self.isEnable = false
+    }
 }
