@@ -51,4 +51,12 @@ class Laptop {
 
         return false
     }
+
+    private func tryBroke() -> Bool {
+        if cicles > 5 {
+            return Int(arc4random_uniform(1000)) % 5 == 0
+        }
+
+        return false
+    }
 }
