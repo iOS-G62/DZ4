@@ -42,4 +42,13 @@ class Laptop {
 
         return isEnable
     }
+
+    func turnOff() -> Bool{
+        if isEnable {
+            isEnable = !isEnable
+            return true
+        }
+
+        return false
+    }
 }
