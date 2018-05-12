@@ -16,8 +16,8 @@ class ViewController: UIViewController {
         let laptop = Laptop(name: "Asus", ram: 16, vgi: 8, frequency: 3.2)
 
         print("Turn Off - \(laptop.turnOff())")
-        print("Turn Off - \(laptop.turnOn())")
-        print("Turn Off - \(laptop.turnOn())")
+        print("Turn On - \(laptop.turnOn())")
+        print("Turn On - \(laptop.turnOn())")
         print("Turn Off - \(laptop.turnOff())")
     }
 
