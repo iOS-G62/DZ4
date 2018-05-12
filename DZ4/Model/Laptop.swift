@@ -26,4 +26,20 @@ class Laptop {
         self.isBroken = false
         self.isEnable = false
     }
+
+    func turnOn() -> Bool{
+        if !isEnable {
+            cicles += 1
+
+            if !isBroken {
+                isBroken = tryBroke()
+            }
+
+            if !isBroken {
+                isEnable = true
+            }
+        }
+
+        return isEnable
+    }
 }
