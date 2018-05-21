@@ -12,14 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        //Создать класс (любой: часы, телевизор, ноутбук, мотоцикл, трактор, самолет)
+        //который будет иметь 5 проперти (1 из них приватный) и минимум 3 метода (один из которых приватный должен быть).
+        //Во вью контролере создать экземпляр данного класса и вызывать эти методы.
+        //В консоль принтить то что делают функции данного экземпляра.
+        let laptop = Laptop(name: "Asus", ram: 16, vgi: 8, frequency: 3.2)
+
+        print("Turn Off - \(laptop.turnOff())")
+        print("Turn On - \(laptop.turnOn())")
+        print("Turn On - \(laptop.turnOn())")
+        print("Turn Off - \(laptop.turnOff())")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
